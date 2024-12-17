@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>購物車動態更新</title>
+</head>
+<body>
+    <!-- 購物車按鈕與數量顯示 -->
+    <button id="addToCartBtn">加入購物車</button>
+    <span>購物車數量: <span id="cartQuantity">0</span></span>
+
+    <!-- JavaScript 程式碼 -->
+    <script>
+        let cartQuantity = 0;  // 初始購物車數量
+
+        // 監聽按鈕點擊事件
+        document.getElementById("addToCartBtn").addEventListener("click", function() {
+            cartQuantity++;  // 增加購物車數量
+            document.getElementById("cartQuantity").innerText = cartQuantity;  // 更新數量顯示
+        });
+    </script>
+</body>
+</html>
